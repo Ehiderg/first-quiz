@@ -33,20 +33,21 @@ class magicalOven:
   def add(self, item):
     self.ingredients.append(item)
 
-  def freeze():
+  def freeze(self):
     pass
-  def boil():
-    pass
-
-  def wait():
+  
+  def boil(self):
     pass
 
-  def get_output(self, temperature):
-      if self.ingredients == ["lead", "mercury"] and temperature == 5000:
+  def wait(self):
+    pass
+
+  def get_output(self):
+      if self.ingredients == ["lead", "mercury"]:
         return "gold"
-      elif self.ingredients == ["cheese", "dough", "tomato"] and temperature == 150:
+      elif self.ingredients == ["cheese", "dough", "tomato"]:
         return "pizza"
-      elif self.ingredients == ["water", "air"] and temperature == -100:
+      elif self.ingredients == ["water", "air"]:
         return "snow"
 
 # This function should return an oven instance!
